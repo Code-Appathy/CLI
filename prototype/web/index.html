@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>UbuntuCLIApp Prototype</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header><div><small>UbuntuCLIApp</small><h1>Mobile Dev Console</h1></div><span id="status">接続確認中</span></header>
+  <section class="card">
+    <h2>開発環境チェック</h2>
+    <p>スマホからPC上のUbuntu開発環境を確認する最小サンプルです。</p>
+    <div class="grid">
+      <button data-run="system">Ubuntu</button>
+      <button data-run="codex_version">Codex</button>
+      <button data-run="git_version">Git</button>
+      <button data-run="python_version">Python</button>
+      <button data-run="node_version">Node.js</button>
+      <button data-run="git_status">Git status</button>
+    </div>
+  </section>
+  <section class="card">
+    <div class="row"><h2>結果</h2><button id="clear" class="secondary">消去</button></div>
+    <pre id="output">ボタンを押すとUbuntu側で許可済みコマンドを実行します。</pre>
+  </section>
+  <section class="card muted">
+    <h2>次に検証するもの</h2>
+    <p>プロジェクト選択、Codex起動/再開、指示Inbox、テスト実行、開発中Webアプリ一覧、PC版Codexとの連携。</p>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
